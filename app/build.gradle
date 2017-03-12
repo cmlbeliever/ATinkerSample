@@ -54,7 +54,7 @@ dependencies {
 }
 
 apply plugin: 'com.tencent.tinker.patch'
-def bakPath = file("${buildDir}/bakApk/")
+def bakPath = file("tinkerPatch/")
 
 ext {
     //for some reason, you may want to ignore tinkerBuild, such as instant run debug build?
