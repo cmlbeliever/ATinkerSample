@@ -3,6 +3,7 @@
 
 腾讯Tinker最简化demo，由于腾讯官方的demo对于刚接触的我来说，太过复杂，找不到核心配置，将tinker集成中最核心的东西抽取出来。具体更多使用方法，可以参考[tinker官方demo](https://github.com/Tencent/tinker/tree/master/tinker-sample-android)
 
+**如果觉得对您有帮助，请star下让我知道！**
 **demo快速使用说明**
 
  1. 在master分支上运行app
@@ -13,7 +14,7 @@
 
  1. 在master分支上运行代码
  2. 运行成功后，将app/build/bakApk 目录的最新apk文件和R.txt文件复制到目录tinkerPatch目录下
- 3. 在TinkerPatch目录下将文件分别重命名为：pp-debug-base.apk，app-debug-base-R.txt
+ 3. 在TinkerPatch目录下将文件分别重命名为：app-debug-base.apk，app-debug-base-R.txt
  4. 切换到分支branch-patch，运行tinkerPatchDebug tak![这里写图片描述](http://img.blog.csdn.net/20170312110957046?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY21sX2Jsb2c=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)，获取app/build/outputs/tinkerPatch/patch_signed_7zip.apk文件
  5. 将步骤4获取的文件，复制到手机SD卡根目录下
  6. 运行app，点击加载补丁包
