@@ -55,6 +55,7 @@ dependencies {
 
 apply plugin: 'com.tencent.tinker.patch'
 def bakPath = file("tinkerPatch/")
+def patchBuildPath=file("${buildDir}/bakApk")
 
 ext {
     //for some reason, you may want to ignore tinkerBuild, such as instant run debug build?
@@ -302,7 +303,7 @@ if (ext.tinkerEnabled) {
                         def fileNamePrefix = "${project.name}-${variant.baseName}"
                         def newFileNamePrefix = hasFlavors ? "${fileNamePrefix}" : "${fileNamePrefix}-${date}"
 
-                        def destPath = hasFlavors ? file("${bakPath}/${project.name}-${date}/${variant.flavorName}") : bakPath
+                        def destPath = hasFlavors ? file("${patchBuildPath}/${project.name}-${date}/${variant.flavorName}") : patchBuildPath
                         from variant.outputs.outputFile
                         into destPath
                         rename { String fileName ->
