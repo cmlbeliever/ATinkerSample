@@ -4,6 +4,7 @@
 腾讯Tinker最简化demo，由于腾讯官方的demo对于刚接触的我来说，太过复杂，找不到核心配置，将tinker集成中最核心的东西抽取出来。具体更多使用方法，可以参考[tinker官方demo](https://github.com/Tencent/tinker/tree/master/tinker-sample-android)
 
 **如果觉得对您有帮助，请star下让我知道！**
+
 **demo快速使用说明**
 
  1. 在master分支上运行app
